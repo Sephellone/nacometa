@@ -11,8 +11,244 @@
     <!-- <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous"> -->
-    <title>Магазин «CAT ENERGY»</title>
+    <title>Краудфандинг «Nacometa»</title>
   </head>
+
   <body class="page__body">
+    <h1 class="visually-hidden">Краудфандинговая платформа «Nacometa».</h1>
+
+    <!-- вся верхняя часть страницы: навигация и промо-блок с собранной суммой -->
+
+    <div class="page__header-wrapper">
+      <div class="page__header-container">
+        <header class="page__header main-header">
+          <a class="main-header__logo" href="#">
+            <img class="main-header__logo-image" src="img/logo.png" alt="Логотип компании «Nacometa»." width="200" height="43">
+          </a>
+          <div class="main-header__nav-wrapper">
+
+            <!-- навигация -->
+
+            <nav class="main-header__nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Как это работает</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Истории успеха</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">FAQ</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <select class="main-header__language">
+              <option value="ru" selected>Русский</option>
+              <option value="en">Английский</option>
+              <option value="de">Немецкий</option>
+            </select>
+          </div>
+          <a class="main-header__login" href="#">
+            <span class="visually-hidden">Войти</span>
+          </a>
+          <button class="main-header__navigation-toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </header>
+
+        <!-- промо-блок -->
+
+        <div class="start-info">
+          <p class="start-info__amount">€ 355&nbsp;320&nbsp;000</p>
+          <p class="start-info__text">
+            Cобрано на платформе nacometa.com
+            <br>
+            Поделись своей мечтой и получи поддержку сообщества!
+          </p>
+          <div class="start-info__links-wrapper">
+            <a href="#" class="start-info__link start-info__link--major">Начать сбор средств</a>
+            <a href="#" class="start-info__link start-info__link--minor">Смотреть видео</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="page__main">
+
+      <!-- Раздел "самые активные мечтатели" -->
+      <section class="page__section active-users">
+        <div class="active-users__wrapper">
+          <h2 class="active-users__title">Самые активные мечтатели</h2>
+          <a class="active-users__show-all" href="#">Показать все мечты</a>
+
+          <!-- Слайдер карточек активных пользователей -->
+
+          <div class="active-users__slider glide">
+            <div class="active-users__slider-wrapper glide__track" data-glide-el="track">
+              <ul class="active-users__slides glide__slides">
+
+                <li class="active-users__slide glide__slide">
+                  <div class="active-users__card dream-card">
+                    <img class="dream-card__image" src="img/dream-card-1.webp" alt="Фотография квартиры с красивым ремонтом." width="360" height="228">
+                    <h3 class="dream-card__title">Делаю ремонт в квартире родителей</h3>
+                    <p class="dream-card__description">
+                      Всем привет! Меня зовут Ирина и я хочу помочь своим родителям сделать свежий ремонт.<br> Что-то мы собираем своими силами, но...
+                    </p>
+                    <p class="dream-card__latest-donation">Последний перевод 20 мин назад</p>
+                    <div class="dream-card__progress-track">
+                      <div class="dream-card__progress-done"></div>
+                    </div>
+                    <p class="dream-card__funds">
+                      <strong class="dream-card__funds-collected">
+                        €
+                        <span class="dream-card__funds-collected">3250</span>
+                        собрано
+                      </strong>
+                      из €
+                      <span class="dream-card__funds-needed">4300</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="active-users__slide glide__slide">
+                  <div class="active-users__card dream-card">
+                    <img class="dream-card__image" src="img/dream-card-2.webp" alt="Фотография квартиры с красивым ремонтом." width="360" height="228">
+                    <h3 class="dream-card__title">Открыть балетную школу</h3>
+                    <p class="dream-card__description">
+                      Здравствуйте! Меня зовут Инга и я пол жизни отдала балету. Сейчас чувствую, что хочу делиться этим с молодым...
+                    </p>
+                    <p class="dream-card__latest-donation">Последний перевод 35 мин назад</p>
+                    <div class="dream-card__progress-track">
+                      <div class="dream-card__progress-done"></div>
+                    </div>
+                    <p class="dream-card__funds">
+                      <strong class="dream-card__funds-collected">
+                        €
+                        <span class="dream-card__funds-collected">4820</span>
+                        собрано
+                      </strong>
+                      из €
+                      <span class="dream-card__funds-needed">5000</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="active-users__slide glide__slide">
+                  <div class="active-users__card dream-card">
+                    <img class="dream-card__image" src="img/dream-card-3.webp" alt="Фотография квартиры с красивым ремонтом." width="360" height="228">
+                    <h3 class="dream-card__title">Хочу побывать на северном полюсе</h3>
+                    <p class="dream-card__description">
+                      Всем привет! Меня зовут Марк и я хочу отправиться в путешествие на северный полюс...
+                    </p>
+                    <p class="dream-card__latest-donation">Последний перевод 10 мин назад</p>
+                    <div class="dream-card__progress-track">
+                      <div class="dream-card__progress-done"></div>
+                    </div>
+                    <p class="dream-card__funds">
+                      <strong class="dream-card__funds-collected">
+                        €
+                        <span class="dream-card__funds-collected">2700</span>
+                        собрано
+                      </strong>
+                      из €
+                      <span class="dream-card__funds-needed">3500</span>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <p class="active-users__slogan">
+            <span class="active-users__slogan-text">Nacometa.com — онлайн-сообщество людей, вдохновленных идеей взаимной поддержки</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Секция "как это работает" -->
+
+      <section class="page__section how-it-works">
+        <h2 class="how-it-works__title">Поддержи мечты участников сообщества всего на € 100 и собери до € 5 000 на каждую свою мечту!</h2>
+
+        <!-- Жуткого вида диаграмма с подсказками  -->
+        <div class="how-it-works__diagram diagram">
+          <div class="diagram__level diagram__level--5">
+            <div class="diagram__level diagram__level--4">
+              <div class="diagram__level-wrapper">
+                <button class="diagram-level__button" type="button" id="button-level-4">
+                  <span class="visually-hidden">Четвертый круг</span>
+                </button>
+                <div class="diagram-level__tooltip tooltip tooltip--4" id="tooltip-level-4">
+                  <h3 class="tooltip__amount">€ 10</h3>
+                  <p class="tooltip__desctiption">от каждого участника 4 круга</p>
+                </div>
+              </div>
+
+              <div class="diagram__level diagram__level--3">
+                <div class="diagram__level-wrapper">
+                  <button class="diagram-level__button" type="button" id="button-level-3">
+                    <span class="visually-hidden">Третий круг</span>
+                  </button>
+                  <div class="diagram-level__tooltip tooltip tooltip--3" id="tooltip-level-3">
+                    <h3 class="tooltip__amount">€ 20</h3>
+                    <p class="tooltip__desctiption">от каждого участника 3 круга</p>
+                  </div>
+                </div>
+
+                <div class="diagram__level diagram__level--2">
+                  <div class="diagram__level-wrapper">
+                    <button class="diagram-level__button" type="button" id="button-level-2">
+                      <span class="visually-hidden">Второй круг</span>
+                    </button>
+                    <div class="diagram-level__tooltip tooltip tooltip--2" id="tooltip-level-2">
+                      <h3 class="tooltip__amount">€ 30</h3>
+                      <p class="tooltip__desctiption">от каждого участника 2 круга</p>
+                    </div>
+                  </div>
+
+                  <div class="diagram__level diagram__level--1">
+                    <div class="diagram__level-wrapper">
+                      <button class="diagram-level__button" type="button" id="button-level-1">
+                        <span class="visually-hidden">Первый круг</span>
+                      </button>
+                      <div class="diagram-level__tooltip tooltip tooltip--1" id="tooltip-level-1">
+                        <h3 class="tooltip__amount">€ 40</h3>
+                        <p class="tooltip__desctiption">от каждого участника 1 круга</p>
+                      </div>
+                    </div>
+
+                    <div class="diagram-level__you">
+                      <div class="diagram-level__tooltip tooltip tooltip--you">
+                        <h3 class="tooltip__title">Представь, что это ты</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Прочие карточки раздела "как это рабоатет" -->
+        <div class="how-it-works__limit limit">
+          <h3 class="limit__title">На каждую мечту можно собрать до:</h3>
+          <p class="limit__amount">€ 5 000</p>
+          <p class="limit__text">По нашей статистике эту сумму реалистично собрать за 30 дней</p>
+        </div>
+
+        <div class="how-it-works__description funding-steps">
+          <h3 class="funding-steps__title">Как это работает</h3>
+          <ol class="funding-steps__list">
+            <li class="funding-steps__item">Расскажи о своей мечте</li>
+            <li class="funding-steps__item">Поддержи мечты четырех участников на 10, 20, 30 и 40 евро</li>
+            <li class="funding-steps__item">Оформи подписку для доступа к статистике твоей кампании <a class="funding-steps__item-link" href="#">здесь</a></li>
+            <li class="funding-steps__item">Делись своими мечтами со всем миром - получай неограниченную помощь от друзей и участников сообщества Nacometa</li>
+          </ol>
+          <a class="funding-steps__link funding-steps__link--major" href="#">Начать сбор средств</a>
+          <a class="funding-steps__link" href="#">Узнать подробнее</a>
+
+        </div>
+      </section>
+
+      <section class="page__section"></section>
+    </main>
   </body>
 </html>
