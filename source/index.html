@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> -->
     <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Manrope:400,700">
     <link rel="stylesheet" href="css/style.min.css">
     <!-- <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -31,12 +32,24 @@
 
             <nav class="main-header__nav main-nav">
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#how-to-use">Как это работает</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#complete-goals">Истории успеха</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#opportunities">Возможности</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#faq">FAQ</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">О нас</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#how-to-use">Как это работает</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#complete-goals">Истории успеха</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#opportunities">Возможности</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#faq">FAQ</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#contacts">Контакты</a>
+                </li>
               </ul>
             </nav>
             <select class="main-header__language">
@@ -242,8 +255,8 @@
             <li class="funding-steps__item">Оформи подписку для доступа к статистике твоей кампании <a class="funding-steps__item-link" href="#">здесь</a></li>
             <li class="funding-steps__item">Делись своими мечтами со всем миром - получай неограниченную помощь от друзей и участников сообщества Nacometa</li>
           </ol>
-          <a class="funding-steps__link funding-steps__link--major" href="#">Начать сбор средств</a>
-          <a class="funding-steps__link" href="#">Узнать подробнее</a>
+          <a class="funding-steps__link funding-steps__link--major" href="#join-form">Начать сбор средств</a>
+          <a class="funding-steps__link" href="#faq">Узнать подробнее</a>
 
         </div>
       </section>
@@ -425,6 +438,7 @@
         </div>
       </section>
 
+      <!-- Секция с формой -->
       <section class="page__section join" id="join-form">
         <h2 class="join__title">Расскажи о своей мечте прямо сейчас!</h2>
         <div class="join__wrapper">
@@ -461,6 +475,7 @@
         </div>
       </section>
 
+      <!-- Секция часто задаваемых вопросов -->
       <section class="page__section faq" id="faq">
         <h2 class="faq__title">Что такое фандрайзинговая кампания?</h2>
         <ul class="faq__list">
@@ -532,6 +547,7 @@
         </ul>
       </section>
 
+      <!-- Футер с контактами -->
       <footer class="page__footer footer">
         <h2 class="footer__title" id="contacts">Есть вопросы? Мы открыты для общения и поддержки 24/7</h2>
         <div class="footer__emails">
