@@ -32,11 +32,11 @@
             <nav class="main-header__nav main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Как это работает</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Истории успеха</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">FAQ</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#how-to-use">Как это работает</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#complete-goals">Истории успеха</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#opportunities">Возможности</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#faq">FAQ</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
               </ul>
             </nav>
             <select class="main-header__language">
@@ -48,7 +48,7 @@
           <a class="main-header__login" href="#">
             <span class="visually-hidden">Войти</span>
           </a>
-          <button class="main-header__navigation-toggle">
+          <button class="main-header__navigation-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </header>
@@ -63,8 +63,8 @@
             Поделись своей мечтой и получи поддержку сообщества!
           </p>
           <div class="start-info__links-wrapper">
-            <a href="#" class="start-info__link start-info__link--major">Начать сбор средств</a>
-            <a href="#" class="start-info__link start-info__link--minor">Смотреть видео</a>
+            <a class="start-info__link start-info__link--major" href="#join-form">Начать сбор средств</a>
+            <a class="start-info__link start-info__link--minor" href="#video-reviews">Смотреть видео</a>
           </div>
         </div>
       </div>
@@ -164,7 +164,7 @@
 
       <!-- Секция "как это работает" -->
 
-      <section class="page__section how-it-works">
+      <section class="page__section how-it-works" id="how-to-use">
         <h2 class="how-it-works__title">Поддержи мечты участников сообщества всего на € 100 и собери до € 5 000 на каждую свою мечту!</h2>
 
         <!-- Жуткого вида диаграмма с подсказками  -->
@@ -248,7 +248,344 @@
         </div>
       </section>
 
-      <section class="page__section"></section>
+      <!-- Секция с отзывами -->
+      <section class="page__section reviews" id="complete-goals">
+        <h2 class="reviews__title">Эти люди уже исполнили свои мечты</h2>
+
+        <!-- Слайдер с текстовыми карточками -->
+        <div class="reviews__text-slider glide">
+          <div class="reviews__text-slider-wrapper glide__track" data-glide-el="track">
+            <ul class="reviews__text-slides glide__slides">
+
+              <li class="reviews__text-slide glide__slide">
+                <div class="reviews__text-card text-card">
+                  <h3 class="text-card__title">Great community!</h3>
+                  <p class="text-card__description">
+                    I want to express my admiration of a brilliant project and a great community. Thanks to nacometa.com I went to study in the UK, which I could have only dreamed of before. With your help I succeeded, and let me say a big thank you to everyone!
+                  </p>
+                  <div class="text-card__author">
+                    <img class="text-card__avatar" src="img/user-avatar.png" alt="Фотография пользователя." width="35" height="35">
+                    <p class="text-card__info">
+                      <span class="text-card__name">Max</span> from <span class="text-card__country">the UK</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="reviews__slide glide__slide">
+                <div class="reviews__text-card text-card">
+                  <h3 class="text-card__title">Dreams come true!</h3>
+                  <p class="text-card__description">
+                    I joined Nacometa to try to fundraise money for my own pizza delivery business. And I am amazed by the way it’s working! I am certainly on the way to my dream, thanks to the brilliant team and 24/7 support!
+                  </p>
+                  <div class="text-card__author">
+                    <img class="text-card__avatar" src="img/user-avatar.png" alt="Фотография пользователя." width="35" height="35">
+                    <p class="text-card__info">
+                      <span class="text-card__name">John</span> from <span class="text-card__country">Poland</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="reviews__slide glide__slide">
+                <div class="reviews__text-card text-card">
+                  <h3 class="text-card__title">Every dream matters!</h3>
+                  <p class="text-card__description">
+                    I tried to fundraise money for my ecological campaign using different services, but they didn’t give me any significant results. Then I got to know about Nacometa and voila! I have the money to save the forest I live nearby.
+                  </p>
+                  <div class="text-card__author">
+                    <img class="text-card__avatar" src="img/user-avatar.png" alt="Фотография пользователя." width="35" height="35">
+                    <p class="text-card__info">
+                      <span class="text-card__name">Martin</span> from <span class="text-card__country">France</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Слайдер с видео-карточками -->
+        <div class="reviews__video-slider glide" id="video-reviews">
+          <div class="reviews__video-slider-wrapper glide__track" data-glide-el="track">
+            <ul class="reviews__video-slides glide__slides">
+
+              <li class="reviews__video-slide glide__slide">
+                <div class="reviews__video-card video-card">
+                  <img class="video-card__image" src="img/video-preview-1.png" alt="" width="250" height="420">
+                  <button class="video-card__button" type="button">
+                    <span class="visually-hidden">Показать видео</span>
+                  </button>
+                  <p class="video-card__author">
+                    <span class="video-card__name">Jennifer</span> from <span class="video-card__location">London, UK</span>
+                  </p>
+                </div>
+              </li>
+
+              <li class="reviews__video-slide glide__slide">
+                <div class="reviews__video-card video-card">
+                  <img class="video-card__image" src="img/video-preview-2.png" alt="" width="250" height="420">
+                  <button class="video-card__button" type="button">
+                    <span class="visually-hidden">Показать видео</span>
+                  </button>
+                  <p class="video-card__author">
+                    <span class="video-card__name">Carol</span> from <span class="video-card__location">Slovenia</span>
+                  </p>
+                </div>
+              </li>
+
+              <li class="reviews__video-slide glide__slide">
+                <div class="reviews__video-card video-card">
+                  <img class="video-card__image" src="img/video-preview-3.png" alt="" width="250" height="420">
+                  <button class="video-card__button" type="button">
+                    <span class="visually-hidden">Показать видео</span>
+                  </button>
+                  <p class="video-card__author">
+                    <span class="video-card__name">Oliver</span> from <span class="video-card__location">London, UK</span>
+                  </p>
+                </div>
+              </li>
+
+              <li class="reviews__video-slide glide__slide">
+                <div class="reviews__video-card video-card">
+                  <img class="video-card__image" src="img/video-preview-4.png" alt="" width="250" height="420">
+                  <button class="video-card__button" type="button">
+                    <span class="visually-hidden">Показать видео</span>
+                  </button>
+                  <p class="video-card__author">
+                    <span class="video-card__name">Greg</span> from <span class="video-card__location">Prague, Czech Republic</span>
+                  </p>
+                </div>
+              </li>
+
+              <li class="reviews__video-slide glide__slide">
+                <div class="reviews__video-card video-card">
+                  <img class="video-card__image" src="img/video-preview-1.png" alt="" width="250" height="420">
+                  <button class="video-card__button" type="button">
+                    <span class="visually-hidden">Показать видео</span>
+                  </button>
+                  <p class="video-card__author">
+                    <span class="video-card__name">Oscar</span> from <span class="video-card__location">London, UK</span>
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Возможности" -->
+      <section class="page__section opportunities" id="opportunities">
+        <h2 class="opporunutues__title">Возможности</h2>
+        <p class="opportunities__subtitle">Легкий, быстрый и эффективный способ осуществить свою мечту!</p>
+
+        <div class="opporunities__slider glide">
+          <div class="opportunities__slider-wrapper glide__track" data-glide-el="track">
+            <ul class="opportunities__slides glide__slides">
+              <li class="opportunities__slide glide__slide">
+                <div class="opportunities__card feature-card">
+                  <div class="feature-card__wrapper feature-card__wrapper--free">
+                    <h3 class="feature-card__title">Бесплатно</h3>
+                    <p class="feature-card__description">Абсолютно прозрачная некоммерческая платформа без комиссий за обмен средствами. Мы не аккумулируем средства участников.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="opportunities__slide glide__slide">
+                <div class="opportunities__card feature-card">
+                  <div class="feature-card__wrapper feature-card__wrapper--intermediary">
+                    <h3 class="feature-card__title">Без посредников</h3>
+                    <p class="feature-card__description">Между участниками нет никаких третьих лиц или посредников. Только прямой обмен средствами.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="opportunities__slide glide__slide">
+                <div class="opportunities__card feature-card">
+                  <div class="feature-card__wrapper feature-card__wrapper--easy">
+                    <h3 class="feature-card__title">Легко</h3>
+                    <p class="feature-card__description">Отслеживание роста команды и поступающих переводов, с помощью удобной платформы.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="opportunities__slide glide__slide">
+                <div class="opportunities__card feature-card">
+                  <div class="feature-card__wrapper feature-card__wrapper--convenient">
+                    <h3 class="feature-card__title">Удобно и безопасно</h3>
+                    <p class="feature-card__description">Мультиязычный интерфейс и защищенная система с круглосуточной техподдержкой.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section join" id="join-form">
+        <h2 class="join__title">Расскажи о своей мечте прямо сейчас!</h2>
+        <div class="join__wrapper">
+          <form action="post" class="join__form form">
+
+            <div class="form__drop-zone drop-zone">
+              <p class="drop-zone__prompt">
+                Перетащи сюда изображение или
+                <span class="drop-zone__link">загрузи с компьютера</span>
+              </p>
+              <p class="drop-zone__prompt drop-zone__prompt--mobile">Нажми, чтобы прикрепить картинку</p>
+              <input class="drop-zone__input" type="file" name="user-photo">
+            </div>
+
+            <div class="form__inputs">
+              <label class="visually-hidden" for="dream">Название вашей мечты</label>
+              <input class="form__text-input" type="text" name="dream-name" id="dream" placeholder="Название вашей мечты">
+              <label class="visually-hidden" for="dream-description">Описание мечты</label>
+              <textarea class="form__textarea" name="description" id="dream-description" placeholder="Описание"></textarea>
+              <label class="form__label" for="dream-goal">Цель по сбору</label>
+              <input class="form__number-input" type="number" name="amount" id="dream-goal" value="5000">
+            </div>
+            <button class="form__submit-button" type="submit">Продолжить</button>
+
+          </form>
+
+          <div class="join__scale scale">
+            <p class="scale__title">Здесь будет название твоей мечты</p>
+            <div class="scale__line"></div>
+            <p class="scale__amount">
+              <strong>€ 0 собрано</strong> из € <span class="scale__goal">5 000</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section faq" id="faq">
+        <h2 class="faq__title">Что такое фандрайзинговая кампания?</h2>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <div class="faq__title-wrapper">
+              <h3 class="faq__item-name">Кампания по сбору средств в сообществе nacometa.com</h3>
+              <button class="faq__button faq__button--closed">
+                <span class="visually-hidden">Подробнее</span>
+              </button>
+            </div>
+            <div class="faq__description faq__description--closed">
+              Фандрайзинг — это процесс поиска и привлечения финансовых средств от частных лиц, фондов или компаний для реализации социально значимых проектов.
+              <br>Кампании по сбору средств могут быть направлены на различные цели: от помощи студентам с оплатой обучения до воплощения чьей-то мечты о путешествии в космос.
+              <br> Целью сообщества nacometa.com является развитие платформы взаимовыгодного фандрайзинга, которая даст возможность легко и быстро собирать средства на осуществление своей мечты.
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <div class="faq__title-wrapper">
+              <h3 class="faq__item-name">С чего мне начать и как собрать средства в Nacometa?</h3>
+              <button class="faq__button faq__button--closed">
+                <span class="visually-hidden">Подробнее</span>
+              </button>
+            </div>
+            <div class="faq__description faq__description--closed">
+              Заполни форму на сайте. Опиши свою мечту, прикрепи вдохновляющее фото и определи сумму, которую хочешь собрать.
+              <br>Поддержи мечты четырех участников на 10, 20, 30 и 40 евро.
+              <br>Оформи подписку для доступа к статистике твоей кампании.
+              <br>Делись ссылкой на свою мечту со всем миром - получай помощь от друзей и участников сообщества Nacometa.
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <div class="faq__title-wrapper">
+              <h3 class="faq__item-name">Ограничен ли мой сбор средств в Nacometa по сумме и времени?</h3>
+              <button class="faq__button faq__button--closed">
+                <span class="visually-hidden">Подробнее</span>
+              </button>
+            </div>
+            <div class="faq__description faq__description--closed">
+              Для впервые зарегистрировавшихся максимальная сумма фандрайзинга - € 5000.
+              <br> При успешном завершении фандрайзинга на первую мечту лимит всех последующих - € 12000.
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <div class="faq__title-wrapper">
+              <h3 class="faq__item-name">Как я могу отслеживать результаты моей кампании по сбору средств?</h3>
+              <button class="faq__button faq__button--closed">
+                <span class="visually-hidden">Подробнее</span>
+              </button>
+            </div>
+            <div class="faq__description faq__description--closed">
+              При оформлении подписки тебе будет доступна вся информация о твоей кампании в личном кабинете.
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <div class="faq__title-wrapper">
+              <h3 class="faq__item-name">Законно ли собирать деньги таким образом и нужно ли платить налоги?</h3>
+              <button class="faq__button faq__button--closed">
+                <span class="visually-hidden">Подробнее</span>
+              </button>
+            </div>
+            <div class="faq__description faq__description--closed">
+              Что за вопросы вообще? Это финансовая пирамида. "Бегите, глупцы"
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="page__footer footer">
+        <h2 class="footer__title" id="contacts">Есть вопросы? Мы открыты для общения и поддержки 24/7</h2>
+        <div class="footer__emails">
+          <a class="footer__link" href="mailto:info@nacometa.com">info@nacometa.com</a>
+          <a class="footer__link" href="mailto:support@nacometa.com">support@nacometa.com</a>
+        </div>
+        <div class="footer__other-links">
+          <div class="footer__files">
+            <a class="footer__link" href="#">Условия использования</a>
+            <a class="footer__link" href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__socials">
+            <h3 class="visually-hidden">Мы в соцсетях</h3>
+            <ul class="footer__socials-list social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в LinkedIn</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Whatsapp</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Telegram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2021 Nacometa. Все права защищены</p>
+      </footer>
     </main>
   </body>
 </html>
