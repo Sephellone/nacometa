@@ -1,6 +1,49 @@
 @import "variables.scss";
 
 .page__body {
-  background-color: rgb(188, 188, 214);
+  min-width: 100%;
+  max-width: 100%;
   font-family: $Nunito;
+  margin: 0;
+  padding: 0;
+}
+
+.page__header-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../img/header-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    transform: scaleX(-1);
+  }
+}
+
+.page__header-container {
+  max-width: $desktop-wrapper;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 28px;
+  color: $white;
+}
+
+@media (max-width: $max-mobile-width) {
+  .page__header-container {
+    max-width: $max-mobile-width;
+    min-width: $mobile-wrapper;
+    padding-top: 28px;
+  }
 }

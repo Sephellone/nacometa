@@ -26,13 +26,13 @@
           <a class="main-header__logo" href="#">
             <img class="main-header__logo-image" src="img/logo.png" alt="Логотип компании «Nacometa»." width="200" height="43">
           </a>
-          <div class="main-header__nav-wrapper">
+          <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
 
             <!-- навигация -->
 
             <nav class="main-header__nav main-nav">
               <ul class="main-nav__list">
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--current">
                   <a class="main-nav__link" href="#">О нас</a>
                 </li>
                 <li class="main-nav__item">
@@ -52,16 +52,27 @@
                 </li>
               </ul>
             </nav>
-            <select class="main-header__language">
-              <option value="ru" selected>Русский</option>
-              <option value="en">Английский</option>
-              <option value="de">Немецкий</option>
-            </select>
+
+            <!-- кнопка выбора языка -->
+            <div class="main-header__language-wrapper">
+              <select class="main-header__language">
+                <option value="ru" selected>Русский</option>
+                <option value="en">Английский</option>
+                <option value="de">Немецкий</option>
+              </select>
+              <svg class="main-header__select-icon" width="11" height="6">
+                <use href="img/sprite.svg#arrow-select"></use>
+              </svg>
+            </div>
           </div>
+
           <a class="main-header__login" href="#">
+            <svg class="main-header__login-icon" width="28" height="28">
+              <use href="img/sprite.svg#icon-user"></use>
+            </svg>
             <span class="visually-hidden">Войти</span>
           </a>
-          <button class="main-header__navigation-toggle" type="button">
+          <button class="main-header__navigation-toggle main-header__navigation-toggle--burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </header>
