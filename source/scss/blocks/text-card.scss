@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+.text-card {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: $white;
+  box-shadow: 0px 24px 32px $black-shadow;
+  border-radius: 20px;
+}
+
+.text-card__title {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-card__description {
+  height: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-card__author {
+  display: flex;
+  align-items: center;
+}
+
+.text-card__avatar {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  margin-right: 22px;
+  border-radius: 50%;
+}
+
+.text-card__info {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .text-card {
+    width: 333px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .text-card__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .text-card__description {
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .text-card__author {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

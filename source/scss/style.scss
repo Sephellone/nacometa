@@ -1,6 +1,4 @@
 @use "blocks/visually-hidden.scss";
-@use "blocks/swiper-vars.scss";
-@use "blocks/swiper.scss";
 @use "blocks/page.scss";
 @use "blocks/main-header.scss";
 @use "blocks/main-nav.scss";
@@ -12,3 +10,6 @@
 @use "blocks/limit.scss";
 @use "blocks/funding-steps.scss";
 @use "blocks/tooltip.scss";
+@use "blocks/reviews.scss";
+@use "blocks/text-card.scss";
+@use "blocks/video-card.scss";

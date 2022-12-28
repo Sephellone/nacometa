@@ -58,6 +58,10 @@
   padding: 0 20px;
 }
 
+.page__how {
+  margin-bottom: calc(35px + 5.7vw);
+}
+
 @media (max-width: $max-mobile-width) {
   .page__body {
     font-size: 12px;
@@ -76,5 +80,9 @@
   .page__section {
     min-width: calc($mobile-wrapper + 40px);
     padding: 0;
+  }
+
+  .page__how {
+    margin-bottom: 9vw;
   }
 }

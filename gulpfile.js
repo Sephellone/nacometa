@@ -88,6 +88,7 @@ export const copy = (done) => {
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
+    'source/vendor/**/*.css',
   ], {
     base: 'source'
   })
@@ -126,7 +127,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/scss/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/*.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts, reload));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 

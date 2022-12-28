@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> -->
     <!-- <link rel="manifest" href="manifest.webmanifest"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Manrope:400,700">
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="css/style.min.css">
     <!-- <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -202,7 +203,7 @@
 
       <!-- Секция "как это работает" -->
 
-      <section class="page__section how-it-works" id="how-to-use">
+      <section class="page__section page__how how-it-works" id="how-to-use">
         <h2 class="how-it-works__title">Поддержи мечты участников сообщества всего на € 100 и собери до € 5 000 на каждую свою мечту!</h2>
         <div class="how-it-works__wrapper">
           <!-- Жуткого вида диаграмма с подсказками  -->
@@ -215,7 +216,7 @@
                   </button>
                   <div class="diagram-level__tooltip tooltip diagram-level__tooltip--4" id="tooltip-level-4">
                     <h3 class="tooltip__amount">€ 10</h3>
-                    <p class="tooltip__desctiption">от каждого участника 4 круга</p>
+                    <p class="tooltip__description">от каждого участника 4 круга</p>
                   </div>
                 </div>
 
@@ -226,7 +227,7 @@
                     </button>
                     <div class="diagram-level__tooltip tooltip diagram-level__tooltip--3" id="tooltip-level-3">
                       <h3 class="tooltip__amount">€ 20</h3>
-                      <p class="tooltip__desctiption">от каждого участника 3 круга</p>
+                      <p class="tooltip__description">от каждого участника 3 круга</p>
                     </div>
                   </div>
 
@@ -237,7 +238,7 @@
                       </button>
                       <div class="diagram-level__tooltip tooltip diagram-level__tooltip--2" id="tooltip-level-2">
                         <h3 class="tooltip__amount">€ 30</h3>
-                        <p class="tooltip__desctiption">от каждого участника 2 круга</p>
+                        <p class="tooltip__description">от каждого участника 2 круга</p>
                       </div>
                     </div>
 
@@ -248,7 +249,7 @@
                         </button>
                         <div class="diagram-level__tooltip tooltip diagram-level__tooltip--1" id="tooltip-level-1">
                           <h3 class="tooltip__amount">€ 40</h3>
-                          <p class="tooltip__desctiption">от каждого участника 1 круга</p>
+                          <p class="tooltip__description">от каждого участника 1 круга</p>
                         </div>
                       </div>
 
@@ -301,9 +302,9 @@
         <!-- Слайдер с текстовыми карточками -->
         <div class="reviews__text-slider">
           <div class="reviews__text-slider-wrapper swiper">
-            <ul class="reviews__text-slides swiper-wrapper">
+            <div class="reviews__text-slides swiper-wrapper">
 
-              <li class="reviews__text-slide swiper-slide">
+              <div class="reviews__text-slide swiper-slide">
                 <div class="reviews__text-card text-card">
                   <h3 class="text-card__title">Great community!</h3>
                   <p class="text-card__description">
@@ -316,9 +317,9 @@
                     </p>
                   </div>
                 </div>
-              </li>
+              </div>
 
-              <li class="reviews__text-slide swiper-slide">
+              <div class="reviews__text-slide swiper-slide">
                 <div class="reviews__text-card text-card">
                   <h3 class="text-card__title">Dreams come true!</h3>
                   <p class="text-card__description">
@@ -331,9 +332,9 @@
                     </p>
                   </div>
                 </div>
-              </li>
+              </div>
 
-              <li class="reviews__text-slide swiper-slide">
+              <div class="reviews__text-slide swiper-slide">
                 <div class="reviews__text-card text-card">
                   <h3 class="text-card__title">Every dream matters!</h3>
                   <p class="text-card__description">
@@ -346,81 +347,97 @@
                     </p>
                   </div>
                 </div>
-              </li>
+              </div>
 
-            </ul>
-            <div class="swiper-pagination"></div>
-            <button class="reviews__text-button swiper-button-prev" type="button"></button>
-            <button class="reviews__text-button swiper-button-next" type="button"></button>
+            </div>
+            <div class="reviews__text-pagination swiper-pagination"></div>
+
           </div>
+          <button class="reviews__text-button reviews__text-button--prev swiper-button-prev" type="button"></button>
+            <button class="reviews__text-button reviews__text-button--next swiper-button-next" type="button"></button>
         </div>
 
         <!-- Слайдер с видео-карточками -->
         <div class="reviews__video-slider" id="video-reviews">
           <div class="reviews__video-slider-wrapper swiper">
-            <ul class="reviews__video-slides swiper-wrapper">
+            <div class="reviews__video-slides swiper-wrapper">
 
-              <li class="reviews__video-slide swiper-slide">
+              <div class="reviews__video-slide swiper-slide">
                 <div class="reviews__video-card video-card">
                   <img class="video-card__image" src="img/video-preview-1.png" alt="" width="250" height="420">
                   <button class="video-card__button" type="button">
+                    <svg class="video-card__icon" width="26" height="30">
+                      <use href="img/sprite.svg#play"></use>
+                    </svg>
                     <span class="visually-hidden">Показать видео</span>
                   </button>
                   <p class="video-card__author">
                     <span class="video-card__name">Jennifer</span> from <span class="video-card__location">London, UK</span>
                   </p>
                 </div>
-              </li>
+              </div>
 
-              <li class="reviews__video-slide swiper-slide">
+              <div class="reviews__video-slide swiper-slide">
                 <div class="reviews__video-card video-card">
                   <img class="video-card__image" src="img/video-preview-2.png" alt="" width="250" height="420">
                   <button class="video-card__button" type="button">
+                    <svg class="video-card__icon" width="26" height="30">
+                      <use href="img/sprite.svg#play"></use>
+                    </svg>
                     <span class="visually-hidden">Показать видео</span>
                   </button>
                   <p class="video-card__author">
                     <span class="video-card__name">Carol</span> from <span class="video-card__location">Slovenia</span>
                   </p>
                 </div>
-              </li>
+              </div>
 
-              <li class="reviews__video-slide swiper-slide">
+              <div class="reviews__video-slide swiper-slide">
                 <div class="reviews__video-card video-card">
                   <img class="video-card__image" src="img/video-preview-3.png" alt="" width="250" height="420">
                   <button class="video-card__button" type="button">
+                    <svg class="video-card__icon" width="26" height="30">
+                      <use href="img/sprite.svg#play"></use>
+                    </svg>
                     <span class="visually-hidden">Показать видео</span>
                   </button>
                   <p class="video-card__author">
                     <span class="video-card__name">Oliver</span> from <span class="video-card__location">London, UK</span>
                   </p>
                 </div>
-              </li>
+              </div>
 
-              <li class="reviews__video-slide swiper-slide">
+              <div class="reviews__video-slide swiper-slide">
                 <div class="reviews__video-card video-card">
                   <img class="video-card__image" src="img/video-preview-4.png" alt="" width="250" height="420">
                   <button class="video-card__button" type="button">
+                    <svg class="video-card__icon" width="26" height="30">
+                      <use href="img/sprite.svg#play"></use>
+                    </svg>
                     <span class="visually-hidden">Показать видео</span>
                   </button>
                   <p class="video-card__author">
                     <span class="video-card__name">Greg</span> from <span class="video-card__location">Prague, Czech Republic</span>
                   </p>
                 </div>
-              </li>
+              </div>
 
-              <li class="reviews__video-slide swiper-slide">
+              <div class="reviews__video-slide swiper-slide">
                 <div class="reviews__video-card video-card">
                   <img class="video-card__image" src="img/video-preview-1.png" alt="" width="250" height="420">
                   <button class="video-card__button" type="button">
+                    <svg class="video-card__icon" width="26" height="30">
+                      <use href="img/sprite.svg#play"></use>
+                    </svg>
                     <span class="visually-hidden">Показать видео</span>
                   </button>
                   <p class="video-card__author">
                     <span class="video-card__name">Oscar</span> from <span class="video-card__location">London, UK</span>
                   </p>
                 </div>
-              </li>
+              </div>
 
-            </ul>
+            </div>
           </div>
         </div>
       </section>
