@@ -1,0 +1,152 @@
+@import "variables.scss";
+
+.funding-steps {
+  margin: 0;
+  padding: 20px;
+  background-color: $light-blue;
+  border-radius: 20px;
+}
+
+.funding-steps__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.funding-steps__list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  counter-reset: funding;
+}
+
+.funding-steps__item-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.funding-steps__item {
+  position: relative;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $transparent-blue2;
+    transform: translateY(-20%);
+  }
+
+  &::after {
+    counter-increment: funding;
+    content: counter(funding);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: $blue;
+
+    transform: translateY(-50%);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.funding-steps__item-link {
+  text-decoration: none;
+  color: $blue;
+}
+
+.funding-steps__links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.funding-steps__link {
+  display: block;
+  margin-right: 11px;
+  margin-bottom: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+  border-radius: 5px;
+  background-color: $blue;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: lighten($blue, 20);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &--major {
+    background-color: $orange;
+    color: $black;
+  }
+
+  &--major:hover {
+    background-color: lighten($orange, 20);
+  }
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .funding-steps__title {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .funding-steps__list {
+    margin-bottom: 20px;
+  }
+
+  .funding-steps__item {
+    font-size: calc(10px + 1vw);
+    line-height: 24px;
+  }
+
+  .funding-steps__link {
+    display: none;
+    font-size: calc(12px + 1vw);
+
+    &--major {
+      display: block;
+    }
+  }
+
+}

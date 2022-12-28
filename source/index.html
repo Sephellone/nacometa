@@ -193,94 +193,104 @@
             <a class="active-users__show-all" href="#">Показать все мечты</a>
           </div>
         </div>
-        <p class="active-users__slogan">
-          <span class="active-users__slogan-text">Nacometa.com — онлайн-сообщество людей, вдохновленных идеей взаимной поддержки</span>
-        </p>
+        <div class="active-users__slogan-wrapper">
+          <p class="active-users__slogan">
+            <span class="active-users__slogan-text">Nacometa.com — онлайн-сообщество людей, вдохновленных идеей взаимной поддержки</span>
+          </p>
+        </div>
       </section>
 
       <!-- Секция "как это работает" -->
 
       <section class="page__section how-it-works" id="how-to-use">
         <h2 class="how-it-works__title">Поддержи мечты участников сообщества всего на € 100 и собери до € 5 000 на каждую свою мечту!</h2>
-
-        <!-- Жуткого вида диаграмма с подсказками  -->
-        <div class="how-it-works__diagram diagram">
-          <div class="diagram__level diagram__level--5">
-            <div class="diagram__level diagram__level--4">
-              <div class="diagram__level-wrapper">
-                <button class="diagram-level__button" type="button" id="button-level-4">
-                  <span class="visually-hidden">Четвертый круг</span>
-                </button>
-                <div class="diagram-level__tooltip tooltip tooltip--4" id="tooltip-level-4">
-                  <h3 class="tooltip__amount">€ 10</h3>
-                  <p class="tooltip__desctiption">от каждого участника 4 круга</p>
-                </div>
-              </div>
-
-              <div class="diagram__level diagram__level--3">
+        <div class="how-it-works__wrapper">
+          <!-- Жуткого вида диаграмма с подсказками  -->
+          <div class="how-it-works__diagram diagram">
+            <div class="diagram__level diagram__level--5">
+              <div class="diagram__level diagram__level--4">
                 <div class="diagram__level-wrapper">
-                  <button class="diagram-level__button" type="button" id="button-level-3">
-                    <span class="visually-hidden">Третий круг</span>
+                  <button class="diagram-level__button diagram-level__button--4" type="button" id="button-level-4">
+                    <span class="visually-hidden">Четвертый круг</span>
                   </button>
-                  <div class="diagram-level__tooltip tooltip tooltip--3" id="tooltip-level-3">
-                    <h3 class="tooltip__amount">€ 20</h3>
-                    <p class="tooltip__desctiption">от каждого участника 3 круга</p>
+                  <div class="diagram-level__tooltip tooltip diagram-level__tooltip--4" id="tooltip-level-4">
+                    <h3 class="tooltip__amount">€ 10</h3>
+                    <p class="tooltip__desctiption">от каждого участника 4 круга</p>
                   </div>
                 </div>
 
-                <div class="diagram__level diagram__level--2">
+                <div class="diagram__level diagram__level--3">
                   <div class="diagram__level-wrapper">
-                    <button class="diagram-level__button" type="button" id="button-level-2">
-                      <span class="visually-hidden">Второй круг</span>
+                    <button class="diagram-level__button diagram-level__button--3" type="button" id="button-level-3">
+                      <span class="visually-hidden">Третий круг</span>
                     </button>
-                    <div class="diagram-level__tooltip tooltip tooltip--2" id="tooltip-level-2">
-                      <h3 class="tooltip__amount">€ 30</h3>
-                      <p class="tooltip__desctiption">от каждого участника 2 круга</p>
+                    <div class="diagram-level__tooltip tooltip diagram-level__tooltip--3" id="tooltip-level-3">
+                      <h3 class="tooltip__amount">€ 20</h3>
+                      <p class="tooltip__desctiption">от каждого участника 3 круга</p>
                     </div>
                   </div>
 
-                  <div class="diagram__level diagram__level--1">
+                  <div class="diagram__level diagram__level--2">
                     <div class="diagram__level-wrapper">
-                      <button class="diagram-level__button" type="button" id="button-level-1">
-                        <span class="visually-hidden">Первый круг</span>
+                      <button class="diagram-level__button diagram-level__button--2" type="button" id="button-level-2">
+                        <span class="visually-hidden">Второй круг</span>
                       </button>
-                      <div class="diagram-level__tooltip tooltip tooltip--1" id="tooltip-level-1">
-                        <h3 class="tooltip__amount">€ 40</h3>
-                        <p class="tooltip__desctiption">от каждого участника 1 круга</p>
+                      <div class="diagram-level__tooltip tooltip diagram-level__tooltip--2" id="tooltip-level-2">
+                        <h3 class="tooltip__amount">€ 30</h3>
+                        <p class="tooltip__desctiption">от каждого участника 2 круга</p>
                       </div>
                     </div>
 
-                    <div class="diagram-level__you">
-                      <div class="diagram-level__tooltip tooltip tooltip--you">
-                        <h3 class="tooltip__title">Представь, что это ты</h3>
+                    <div class="diagram__level diagram__level--1">
+                      <div class="diagram__level-wrapper">
+                        <button class="diagram-level__button diagram-level__button--1" type="button" id="button-level-1">
+                          <span class="visually-hidden">Первый круг</span>
+                        </button>
+                        <div class="diagram-level__tooltip tooltip diagram-level__tooltip--1" id="tooltip-level-1">
+                          <h3 class="tooltip__amount">€ 40</h3>
+                          <p class="tooltip__desctiption">от каждого участника 1 круга</p>
+                        </div>
+                      </div>
+
+                      <div class="diagram__level--you">
+                        <div class="diagram-level__tooltip tooltip diagram-level__tooltip--you">
+                          <h3 class="tooltip__title">Представь, <br>что это ты</h3>
+                        </div>
                       </div>
                     </div>
+
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Прочие карточки раздела "как это рабоатет" -->
-        <div class="how-it-works__limit limit">
-          <h3 class="limit__title">На каждую мечту можно собрать до:</h3>
-          <p class="limit__amount">€ 5 000</p>
-          <p class="limit__text">По нашей статистике эту сумму реалистично собрать за 30 дней</p>
-        </div>
+          <!-- Прочие карточки раздела "как это рабоатет" -->
+          <div class="how-it-works__limit limit">
+            <h3 class="limit__title">На каждую мечту можно собрать до:</h3>
+            <p class="limit__amount">€ 5 000</p>
+            <p class="limit__text">По нашей статистике эту сумму реалистично собрать за 30 дней</p>
+          </div>
 
-        <div class="how-it-works__description funding-steps">
-          <h3 class="funding-steps__title">Как это работает</h3>
-          <ol class="funding-steps__list">
-            <li class="funding-steps__item">Расскажи о своей мечте</li>
-            <li class="funding-steps__item">Поддержи мечты четырех участников на 10, 20, 30 и 40 евро</li>
-            <li class="funding-steps__item">Оформи подписку для доступа к статистике твоей кампании <a class="funding-steps__item-link" href="#">здесь</a></li>
-            <li class="funding-steps__item">Делись своими мечтами со всем миром - получай неограниченную помощь от друзей и участников сообщества Nacometa</li>
-          </ol>
-          <a class="funding-steps__link funding-steps__link--major" href="#join-form">Начать сбор средств</a>
-          <a class="funding-steps__link" href="#faq">Узнать подробнее</a>
+          <div class="how-it-works__description funding-steps">
+            <h3 class="funding-steps__title">Как это работает</h3>
+            <ol class="funding-steps__list">
+              <li class="funding-steps__item">Расскажи о своей мечте</li>
+              <li class="funding-steps__item">Поддержи мечты четырех участников на 10, 20, 30 и 40 евро</li>
+              <li class="funding-steps__item">
+                <p class="funding-steps__item-wrapper">
+                  Оформи подписку для доступа к статистике твоей кампании
+                  <a class="funding-steps__item-link" href="#">здесь</a>
+                </p>
+              </li>
+              <li class="funding-steps__item">Делись своими мечтами со всем миром - получай неограниченную помощь от друзей и участников сообщества Nacometa</li>
+            </ol>
+            <div class="funding-steps__links-wrapper">
+              <a class="funding-steps__link funding-steps__link--major" href="#join-form">Начать сбор средств</a>
+              <a class="funding-steps__link" href="#faq">Узнать подробнее</a>
+            </div>
 
+          </div>
         </div>
       </section>
 

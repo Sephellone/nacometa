@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .active-users {
+  margin-bottom: 60px;
   padding-top: 52px;
 }
 
@@ -66,8 +67,30 @@
   width: auto;
 }
 
+.active-users__slogan {
+  margin: 0;
+  padding: 45px 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  background-color: $transparent-blue;
+  border-radius: 20px;
+}
+
+.active-users__slogan-text {
+  background: linear-gradient($blue, $dark-blue);
+  background-clip: text;
+  color: transparent;
+}
+
 
 @media (max-width: $max-mobile-width) {
+  .active-users {
+    margin-bottom: 35px;
+    padding-top: 30px;
+  }
+
   .active-users__slider-wrapper {
     height: 318px;
     padding-bottom: 20px;
@@ -86,7 +109,6 @@
   }
 
   .active-users__show-all {
-    // margin: 0 20px;
     position: relative;
     padding: 10px;
     width: 100%;
@@ -94,5 +116,16 @@
 
   .active-users__slider {
     grid-column: 1/2;
+  }
+
+  .active-users__slogan-wrapper{
+    padding: 0 20px;
+  }
+
+  .active-users__slogan {
+    margin-top: 35px;
+    padding: 17px 25px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

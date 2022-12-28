@@ -1,0 +1,45 @@
+@import "variables.scss";
+
+.tooltip__title {
+  min-width: 120px;
+  margin: 0;
+  padding: 0;
+  font-family: $Manrope;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tooltip__amount {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.tooltip__desctiption {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .tooltip__title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .tooltip__amount {
+    font-size: calc(12px + 1.2vw);
+    line-height: calc(18px + 0.6vw);
+    margin-bottom: 0;
+  }
+
+  .tooltip__desctiption {
+    font-size: calc(7px + 1vw);
+    line-height: calc(14px + 0.5vw);
+  }
+}
