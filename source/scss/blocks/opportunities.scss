@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+.opportunities__title {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  font-weight: 700;
+  font-size: calc(23px + 1.2vw);
+  line-height: 50px;
+}
+
+.opportunities__subtitle {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: calc(10px + 1vw);
+  line-height: 32px;
+}
+
+.opportunities__slider-wrapper {
+  width: 100%;
+  height: 383px;
+}
+
+.opportunities__slide {
+  width: auto;
+}
+
+@media (max-width: $max-mobile-width) {
+  .opportunities {
+    padding: 0 20px;
+  }
+
+  .opportunities__title {
+    font-weight: 700;
+    font-size: calc(17px + 1.2vw);
+    line-height: 24px;
+  }
+
+  .opportunities__subtitle {
+    font-size: calc(12px + 1vw);
+    line-height: 24px;
+  }
+
+  .opportunities__slider-wrapper {
+    height: 293px;
+  }
+}

@@ -1,0 +1,129 @@
+@import "variables.scss";
+
+.drop-zone {
+  position: relative;
+  box-sizing: border-box;
+  padding: 85px 20px;
+  background-color: $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover .drop-zone__icon {
+    color: $icon-blue;
+  }
+
+  &--over {
+    &::before {
+      content: "";
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        z-index: 0;
+        width: 90%;
+        height: 85%;
+        background-color: $transparent-blue3;
+        border: 2px dashed $icon-blue;
+        border-radius: 20px;
+        transform: translate(-50% -50%);
+    }
+
+    .drop-zone__icon {
+      color: $icon-blue;
+    }
+  }
+}
+
+.drop-zone__icon {
+  position: relative;
+  z-index: 2;
+  color: $icon-grey;
+  margin-bottom: 30px;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.drop-zone__prompt {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-grey;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.drop-zone__link {
+  color: $blue;
+  text-decoration: underline;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: $black;
+  background: $transparent-white;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .drop-zone {
+    padding: 42px 10px 29px 10px;
+  }
+
+  .drop-zone__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 18px;
+  }
+
+  .drop-zone__prompt {
+    font-size: calc(9px + 1vw);
+    line-height: 26px;
+    color: $blue;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+    }
+
+  }
+}

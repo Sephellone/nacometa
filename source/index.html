@@ -214,7 +214,7 @@
                   <button class="diagram-level__button diagram-level__button--4" type="button" id="button-level-4">
                     <span class="visually-hidden">Четвертый круг</span>
                   </button>
-                  <div class="diagram-level__tooltip tooltip diagram-level__tooltip--4" id="tooltip-level-4">
+                  <div class="diagram-level__tooltip tooltip diagram-level__tooltip--4 diagram-level__tooltip--closed" id="tooltip-level-4">
                     <h3 class="tooltip__amount">€ 10</h3>
                     <p class="tooltip__description">от каждого участника 4 круга</p>
                   </div>
@@ -225,7 +225,7 @@
                     <button class="diagram-level__button diagram-level__button--3" type="button" id="button-level-3">
                       <span class="visually-hidden">Третий круг</span>
                     </button>
-                    <div class="diagram-level__tooltip tooltip diagram-level__tooltip--3" id="tooltip-level-3">
+                    <div class="diagram-level__tooltip tooltip diagram-level__tooltip--3 diagram-level__tooltip--closed" id="tooltip-level-3">
                       <h3 class="tooltip__amount">€ 20</h3>
                       <p class="tooltip__description">от каждого участника 3 круга</p>
                     </div>
@@ -236,7 +236,7 @@
                       <button class="diagram-level__button diagram-level__button--2" type="button" id="button-level-2">
                         <span class="visually-hidden">Второй круг</span>
                       </button>
-                      <div class="diagram-level__tooltip tooltip diagram-level__tooltip--2" id="tooltip-level-2">
+                      <div class="diagram-level__tooltip tooltip diagram-level__tooltip--2 diagram-level__tooltip--closed" id="tooltip-level-2">
                         <h3 class="tooltip__amount">€ 30</h3>
                         <p class="tooltip__description">от каждого участника 2 круга</p>
                       </div>
@@ -247,7 +247,7 @@
                         <button class="diagram-level__button diagram-level__button--1" type="button" id="button-level-1">
                           <span class="visually-hidden">Первый круг</span>
                         </button>
-                        <div class="diagram-level__tooltip tooltip diagram-level__tooltip--1" id="tooltip-level-1">
+                        <div class="diagram-level__tooltip tooltip diagram-level__tooltip--1 diagram-level__tooltip--closed" id="tooltip-level-1">
                           <h3 class="tooltip__amount">€ 40</h3>
                           <p class="tooltip__description">от каждого участника 1 круга</p>
                         </div>
@@ -443,87 +443,97 @@
       </section>
 
       <!-- Секция "Возможности" -->
-      <section class="page__section opportunities" id="opportunities">
-        <h2 class="opporunutues__title">Возможности</h2>
+      <section class="page__section page__opportunities opportunities" id="opportunities">
+        <h2 class="opportunities__title">Возможности</h2>
         <p class="opportunities__subtitle">Легкий, быстрый и эффективный способ осуществить свою мечту!</p>
 
         <div class="opporunities__slider">
           <div class="opportunities__slider-wrapper swiper">
-            <ul class="opportunities__slides swiper-wrapper">
-              <li class="opportunities__slide swiper-slide">
+            <div class="opportunities__slides swiper-wrapper">
+              <div class="opportunities__slide swiper-slide">
                 <div class="opportunities__card feature-card">
                   <div class="feature-card__wrapper feature-card__wrapper--free">
                     <h3 class="feature-card__title">Бесплатно</h3>
                     <p class="feature-card__description">Абсолютно прозрачная некоммерческая платформа без комиссий за обмен средствами. Мы не аккумулируем средства участников.</p>
                   </div>
                 </div>
-              </li>
+              </div>
 
-              <li class="opportunities__slide swiper-slide">
+              <div class="opportunities__slide swiper-slide">
                 <div class="opportunities__card feature-card">
                   <div class="feature-card__wrapper feature-card__wrapper--intermediary">
+
                     <h3 class="feature-card__title">Без посредников</h3>
                     <p class="feature-card__description">Между участниками нет никаких третьих лиц или посредников. Только прямой обмен средствами.</p>
                   </div>
                 </div>
-              </li>
+              </div>
 
-              <li class="opportunities__slide swiper-slide">
+              <div class="opportunities__slide swiper-slide">
                 <div class="opportunities__card feature-card">
                   <div class="feature-card__wrapper feature-card__wrapper--easy">
+
                     <h3 class="feature-card__title">Легко</h3>
                     <p class="feature-card__description">Отслеживание роста команды и поступающих переводов, с помощью удобной платформы.</p>
                   </div>
                 </div>
-              </li>
+              </div>
 
-              <li class="opportunities__slide swiper-slide">
+              <div class="opportunities__slide swiper-slide">
                 <div class="opportunities__card feature-card">
                   <div class="feature-card__wrapper feature-card__wrapper--convenient">
+
                     <h3 class="feature-card__title">Удобно и безопасно</h3>
                     <p class="feature-card__description">Мультиязычный интерфейс и защищенная система с круглосуточной техподдержкой.</p>
                   </div>
                 </div>
-              </li>
+              </div>
 
-            </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Секция с формой -->
-      <section class="page__section join" id="join-form">
-        <h2 class="join__title">Расскажи о своей мечте прямо сейчас!</h2>
+      <section class="page__section page__join join" id="join-form">
         <div class="join__wrapper">
-          <form action="post" class="join__form form">
+          <h2 class="join__title">Расскажи о своей мечте прямо сейчас!</h2>
+          <div class="join__container">
+            <div class="join__form-wrapper">
+              <form action="post" class="join__form form">
 
-            <div class="form__drop-zone drop-zone">
-              <p class="drop-zone__prompt">
-                Перетащи сюда изображение или
-                <span class="drop-zone__link">загрузи с компьютера</span>
+                <div class="form__drop-zone drop-zone">
+                  <svg class="drop-zone__icon" width="100" height="100">
+                    <use href="img/sprite.svg#icon-drop"></use>
+                  </svg>
+                  <p class="drop-zone__prompt drop-zone__prompt--desktop">
+                    Перетащи сюда изображение или
+                    <span class="drop-zone__link">загрузи с компьютера</span>
+                  </p>
+                  <p class="drop-zone__prompt drop-zone__prompt--mobile">Нажми, чтобы прикрепить картинку</p>
+                  <input class="drop-zone__input" type="file" name="user-photo">
+                </div>
+
+                <div class="form__inputs">
+                  <label class="visually-hidden" for="dream">Название вашей мечты</label>
+                  <input class="form__text-input" type="text" name="dream-name" id="dream" placeholder="Название вашей мечты">
+                  <label class="visually-hidden" for="dream-description">Описание мечты</label>
+                  <textarea class="form__textarea" name="description" id="dream-description" placeholder="Описание"></textarea>
+                  <label class="form__label" for="dream-goal">Цель по сбору</label>
+                  <input class="form__number-input" type="number" name="amount" id="dream-goal" value="5000">
+                </div>
+                <button class="form__submit-button" type="submit">Продолжить</button>
+
+              </form>
+            </div>
+
+            <div class="join__scale scale">
+              <p class="scale__title">Здесь будет название твоей мечты</p>
+              <div class="scale__line"></div>
+              <p class="scale__amount">
+                <strong>€ 0 собрано</strong> из € <span class="scale__goal">5 000</span>
               </p>
-              <p class="drop-zone__prompt drop-zone__prompt--mobile">Нажми, чтобы прикрепить картинку</p>
-              <input class="drop-zone__input" type="file" name="user-photo">
             </div>
-
-            <div class="form__inputs">
-              <label class="visually-hidden" for="dream">Название вашей мечты</label>
-              <input class="form__text-input" type="text" name="dream-name" id="dream" placeholder="Название вашей мечты">
-              <label class="visually-hidden" for="dream-description">Описание мечты</label>
-              <textarea class="form__textarea" name="description" id="dream-description" placeholder="Описание"></textarea>
-              <label class="form__label" for="dream-goal">Цель по сбору</label>
-              <input class="form__number-input" type="number" name="amount" id="dream-goal" value="5000">
-            </div>
-            <button class="form__submit-button" type="submit">Продолжить</button>
-
-          </form>
-
-          <div class="join__scale scale">
-            <p class="scale__title">Здесь будет название твоей мечты</p>
-            <div class="scale__line"></div>
-            <p class="scale__amount">
-              <strong>€ 0 собрано</strong> из € <span class="scale__goal">5 000</span>
-            </p>
           </div>
         </div>
       </section>

@@ -19,6 +19,7 @@
   position: relative;
   margin: 0;
   padding: 0 20px;
+  padding-bottom: 78px;
 
 
   &::before {
@@ -43,7 +44,6 @@
   max-width: $desktop-wrapper;
   margin: 0 auto;
   padding-top: 22px;
-  padding-bottom: 28px;
   color: $white;
 }
 
@@ -60,6 +60,14 @@
 
 .page__how {
   margin-bottom: calc(35px + 5.7vw);
+}
+
+.page__opportunities {
+  margin-bottom: 60px;
+}
+
+.page__join {
+  padding: 0 20px;
 }
 
 @media (max-width: $max-mobile-width) {
@@ -84,5 +92,13 @@
 
   .page__how {
     margin-bottom: 9vw;
+  }
+
+  .page__opportunities {
+    margin-bottom: 30px;
+  }
+
+  .page__join {
+    padding: 0 20px;
   }
 }

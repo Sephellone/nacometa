@@ -1,5 +1,7 @@
 @import "variables.scss";
 .diagram {
+  padding-bottom: 10px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,18 +19,69 @@
     width: 542px;
     height: 542px;
     border: 1px solid $diagram-blue-border;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15%;
+      bottom: 5%;
+      display: block;
+      width: 10%;
+      height: 10%;
+      border: 2px solid $white;
+      border-radius: 50%;
+      background-image: url("../img/diagram-3.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &--4 {
     width: 85%;
     height: 85%;
     background-color: $diagram-blue2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 45%;
+      top: 10%;
+      display: block;
+      width: 12%;
+      height: 12%;
+      border: 2px solid $white;
+      border-radius: 50%;
+      background-image: url("../img/diagram-1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &--3 {
     width: 80%;
     height: 80%;
     background-color: $diagram-blue2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 30%;
+      bottom: -10%;
+      display: block;
+      width: 15%;
+      height: 15%;
+      border: 2px solid $white;
+      border-radius: 50%;
+      background-image: url("../img/diagram-2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &--2 {
@@ -64,6 +117,7 @@
   padding: 15px;
   background-color: $white;
   box-shadow: 0px 24px 32px $black-shadow;
+  transition: transform 500ms ease;
 
   &--you {
     bottom: 65%;
@@ -76,28 +130,39 @@
     left: 70%;
     bottom: 80%;
     border-radius: 20px 20px 20px 0;
+    transform-origin: bottom left;
   }
 
   &--2 {
     right: 89%;
     top: 65%;
     border-radius: 20px 0px 20px 20px;
+    transform-origin: top right;
   }
 
   &--3 {
     left: 74%;
     bottom: 14%;
     border-radius: 20px 20px 20px 0;
+    transform-origin: bottom left;
   }
 
   &--4 {
     right: 50%;
     top: 95%;
     border-radius: 20px 0px 20px 20px;
+    transform-origin: top right;
   }
 
   &--closed {
-    display: none;
+    visibility: hidden;
+    transform: scale(0.1);
+  }
+
+  &--opened {
+    visibility: visible;
+    display: block;
+    transform: scale(1);
   }
 }
 

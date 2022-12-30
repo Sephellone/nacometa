@@ -49,7 +49,24 @@ const videoReviewsSlider = new Swiper('.reviews__video-slider-wrapper', {
 
   breakpoints: {
     880: {
-       spaceBetween: 20,
-     }
+      spaceBetween: 20,
+    }
+   },
+});
+
+const opportunitiesSlider = new Swiper('.opportunities__slider-wrapper', {
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  slideToClickedSlide: true,
+  watchOverflow: true,
+
+  breakpoints: {
+    320 : {
+      spaceBetween: 20,
+    },
+    880: {
+      spaceBetween: 40,
+    }
    },
 });
