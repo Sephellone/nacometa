@@ -131,11 +131,12 @@ const watcher = () => {
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
+
 // Build
 export const build = gulp.series(
   clean,
   copy,
-  optimizeImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,
@@ -145,6 +146,7 @@ export const build = gulp.series(
     createWebP
   ),
 );
+
 
 // Start
 

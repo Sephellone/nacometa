@@ -13,6 +13,7 @@
     "del": "^6.0.0",
     "eslint": "8.15.0",
     "eslint-config-htmlacademy": "6.0.0",
+    "gh-pages": "^4.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
@@ -33,7 +34,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint && eslint js/",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp build && gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
