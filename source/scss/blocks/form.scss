@@ -2,7 +2,7 @@
 
 .form__drop-zone {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .form__inputs {
@@ -29,6 +29,10 @@
   &::placeholder {
     font-family: $Nunito;
     color: $dark-grey;
+  }
+
+  &:hover {
+    background-color: $grey2;
   }
 
   &:focus {
@@ -91,6 +95,16 @@
   background-color: $orange;
   border: none;
   border-radius: 5px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $max-mobile-width) {

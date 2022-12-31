@@ -68,6 +68,18 @@
 
 .page__join {
   padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.page__faq {
+  margin-bottom: 108px;
+}
+
+.page__footer {
+  box-sizing: border-box;
+  max-width: calc($desktop-wrapper + 40px);
+  margin: 0 auto;
+  padding: 0 20px 22px 20px;
 }
 
 @media (max-width: $max-mobile-width) {
@@ -100,5 +112,11 @@
 
   .page__join {
     padding: 0 20px;
+    margin-bottom: 35px;
+  }
+
+  .page__faq {
+    padding: 0 20px;
+    margin-bottom: 35px;
   }
 }

@@ -67,12 +67,16 @@
             </div>
           </div>
 
+          <!-- иконка логина -->
+
           <a class="main-header__login" href="#">
             <svg class="main-header__login-icon" width="28" height="28">
               <use href="img/sprite.svg#icon-user"></use>
             </svg>
             <span class="visually-hidden">Войти</span>
           </a>
+
+          <!-- кнопка открывания меню -->
           <button class="main-header__navigation-toggle main-header__navigation-toggle--burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -99,7 +103,7 @@
       <!-- Раздел "самые активные мечтатели" -->
       <section class="page__section page__active-users active-users">
         <div class="active-users__wrapper">
-          <h2 class="active-users__title">Самые активные мечтатели</h2>
+          <h2 class="active-users__title block-title">Самые активные мечтатели</h2>
 
           <!-- Слайдер карточек активных пользователей -->
           <div class="active-users__slider">
@@ -204,7 +208,7 @@
       <!-- Секция "как это работает" -->
 
       <section class="page__section page__how how-it-works" id="how-to-use">
-        <h2 class="how-it-works__title">Поддержи мечты участников сообщества всего на € 100 и собери до € 5 000 на каждую свою мечту!</h2>
+        <h2 class="how-it-works__title block-title">Поддержи мечты участников сообщества всего на € 100 и собери до € 5 000 на каждую свою мечту!</h2>
         <div class="how-it-works__wrapper">
           <!-- Жуткого вида диаграмма с подсказками  -->
           <div class="how-it-works__diagram diagram">
@@ -297,7 +301,7 @@
 
       <!-- Секция с отзывами -->
       <section class="page__section reviews" id="complete-goals">
-        <h2 class="reviews__title">Эти люди уже исполнили свои мечты</h2>
+        <h2 class="reviews__title block-title">Эти люди уже исполнили свои мечты</h2>
 
         <!-- Слайдер с текстовыми карточками -->
         <div class="reviews__text-slider">
@@ -444,7 +448,7 @@
 
       <!-- Секция "Возможности" -->
       <section class="page__section page__opportunities opportunities" id="opportunities">
-        <h2 class="opportunities__title">Возможности</h2>
+        <h2 class="opportunities__title block-title">Возможности</h2>
         <p class="opportunities__subtitle">Легкий, быстрый и эффективный способ осуществить свою мечту!</p>
 
         <div class="opporunities__slider">
@@ -497,7 +501,7 @@
       <!-- Секция с формой -->
       <section class="page__section page__join join" id="join-form">
         <div class="join__wrapper">
-          <h2 class="join__title">Расскажи о своей мечте прямо сейчас!</h2>
+          <h2 class="join__title block-title">Расскажи о своей мечте прямо сейчас!</h2>
           <div class="join__container">
             <div class="join__form-wrapper">
               <form action="post" class="join__form form">
@@ -511,7 +515,7 @@
                     <span class="drop-zone__link">загрузи с компьютера</span>
                   </p>
                   <p class="drop-zone__prompt drop-zone__prompt--mobile">Нажми, чтобы прикрепить картинку</p>
-                  <input class="drop-zone__input" type="file" name="user-photo">
+                  <input class="drop-zone__input" type="file" name="user-photo" accept="image/png, image/gif, image/jpeg">
                 </div>
 
                 <div class="form__inputs">
@@ -539,14 +543,17 @@
       </section>
 
       <!-- Секция часто задаваемых вопросов -->
-      <section class="page__section faq" id="faq">
-        <h2 class="faq__title">Что такое фандрайзинговая кампания?</h2>
+      <section class="page__section page__faq faq" id="faq">
+        <h2 class="faq__title block-title">Что такое фандрайзинговая кампания?</h2>
         <ul class="faq__list">
           <li class="faq__item">
             <div class="faq__title-wrapper">
               <h3 class="faq__item-name">Кампания по сбору средств в сообществе nacometa.com</h3>
               <button class="faq__button faq__button--closed">
                 <span class="visually-hidden">Подробнее</span>
+                <svg class="faq__icon" width="15" height="9">
+                  <use href="img/sprite.svg#arrow-up"></use>
+                </svg>
               </button>
             </div>
             <div class="faq__description faq__description--closed">
@@ -560,6 +567,9 @@
             <div class="faq__title-wrapper">
               <h3 class="faq__item-name">С чего мне начать и как собрать средства в Nacometa?</h3>
               <button class="faq__button faq__button--closed">
+                <svg class="faq__icon" width="15" height="9">
+                  <use href="img/sprite.svg#arrow-up"></use>
+                </svg>
                 <span class="visually-hidden">Подробнее</span>
               </button>
             </div>
@@ -575,6 +585,9 @@
             <div class="faq__title-wrapper">
               <h3 class="faq__item-name">Ограничен ли мой сбор средств в Nacometa по сумме и времени?</h3>
               <button class="faq__button faq__button--closed">
+                <svg class="faq__icon" width="15" height="9">
+                  <use href="img/sprite.svg#arrow-up"></use>
+                </svg>
                 <span class="visually-hidden">Подробнее</span>
               </button>
             </div>
@@ -588,6 +601,9 @@
             <div class="faq__title-wrapper">
               <h3 class="faq__item-name">Как я могу отслеживать результаты моей кампании по сбору средств?</h3>
               <button class="faq__button faq__button--closed">
+                <svg class="faq__icon" width="15" height="9">
+                  <use href="img/sprite.svg#arrow-up"></use>
+                </svg>
                 <span class="visually-hidden">Подробнее</span>
               </button>
             </div>
@@ -600,6 +616,9 @@
             <div class="faq__title-wrapper">
               <h3 class="faq__item-name">Законно ли собирать деньги таким образом и нужно ли платить налоги?</h3>
               <button class="faq__button faq__button--closed">
+                <svg class="faq__icon" width="15" height="9">
+                  <use href="img/sprite.svg#arrow-up"></use>
+                </svg>
                 <span class="visually-hidden">Подробнее</span>
               </button>
             </div>
@@ -627,36 +646,57 @@
             <ul class="footer__socials-list social">
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <svg class="social__icon" width="13" height="15">
+                    <use href="img/sprite.svg#social-instagram"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Instagram</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <svg class="social__icon" width="14" height="16">
+                    <use href="img/sprite.svg#social-linkedin"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в LinkedIn</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <svg class="social__icon" width="15" height="16">
+                    <use href="img/sprite.svg#social-whatsapp"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Whatsapp</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <svg class="social__icon" width="9" height="15">
+                    <use href="img/sprite.svg#social-facebook"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Facebook</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <svg class="social__icon" width="14" height="12">
+                    <use href="img/sprite.svg#social-twitter"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Twitter</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <svg class="social__icon" width="13" height="12">
+                    <use href="img/sprite.svg#social-telegram"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Telegram</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <svg class="social__icon" width="17" height="13">
+                    <use href="img/sprite.svg#social-youtube"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в YouTube</span>
                 </a>
               </li>
@@ -666,7 +706,7 @@
         <p class="footer__copyright">© 2021 Nacometa. Все права защищены</p>
       </footer>
     </main>
-    <script src="js/swiper-bundle.js"></script>
     <script src="js/main.js" type="module"></script>
+    <script src="js/swiper-bundle.js"></script>
   </body>
 </html>

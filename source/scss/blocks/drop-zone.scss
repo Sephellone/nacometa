@@ -15,6 +15,18 @@
     color: $icon-blue;
   }
 
+  &:hover .drop-zone__prompt {
+    color: $black;
+
+    & .drop-zone__link {
+      color: $dark-blue;
+    }
+  }
+
+  &:hover .drop-zone__prompt--mobile {
+    color: $dark-blue;
+  }
+
   &--over {
     &::before {
       content: "";

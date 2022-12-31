@@ -17,7 +17,7 @@
   padding: 0;
   font-weight: 700;
   font-size: calc(23px + 1.2vw);
-  line-height: 50px;
+  line-height: 125%;
 }
 
 .join__container {
@@ -51,6 +51,7 @@
     max-width: max-content;
     margin-bottom: 20px;
     font-size: calc(17px + 1.2vw);
+    line-height: 115%;
   }
 
   .join__form-wrapper {

@@ -5,7 +5,6 @@ const activeUsersSlider = new Swiper('.active-users__slider-wrapper', {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 20,
-  centeredSlides: true,
   slideToClickedSlide: true,
   watchOverflow: true,
 });
@@ -44,7 +43,6 @@ const videoReviewsSlider = new Swiper('.reviews__video-slider-wrapper', {
   slidesPerView: 'auto',
   spaceBetween: 13,
 
-  slideToClickedSlide: true,
   watchOverflow: true,
 
   breakpoints: {

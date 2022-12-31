@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.block-title {
+  font-weight: 700;
+  font-size: calc(23px + 1.2vw);
+  letter-spacing: -0.025em;
+  line-height: 125%;
+}
+
+@media (min-width: $desktop-width) {
+  .block-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .block-title {
+    font-size: calc(17px + 1.2vw);
+    line-height: 115%;
+  }
+}
