@@ -1,0 +1,1 @@
+const toggleElement=(s,t,e)=>{s.classList.contains(t)?(s.classList.remove(t),s.classList.add(e)):(s.classList.add(t),s.classList.remove(e))};export{toggleElement};
